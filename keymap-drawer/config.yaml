@@ -132,6 +132,7 @@ parse_config:
   zmk_remove_keycode_prefix: []
   zmk_keycode_map:
     SPACE: $$mdi:keyboard-space$$
+    ESCAPE: $$mdi:keyboard-esc$$
     ESC: $$mdi:keyboard-esc$$
 
     ENTER: $$mdi:keyboard-return$$
@@ -160,6 +161,9 @@ parse_config:
 
     LGUI: $$mdi:microsoft-windows$$
     RGUI: $$mdi:microsoft-windows$$
+
+    LCMD: $$mdi:apple-keyboard-command$$
+    RCMD: $$mdi:apple-keyboard-command$$
 
     TAB: $$mdi:keyboard-tab$$
 
