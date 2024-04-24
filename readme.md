@@ -2,4 +2,4 @@
 
 ## Sweep
 
-![Sweep](./keymap-drawer/sweep.svg)
+![Sweep](./keymap-drawer/cradio.svg)
