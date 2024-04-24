@@ -111,11 +111,11 @@ layers:
   - Gui+ 8
   - Gui+ 9
   - ''
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - {t: '$$mdi:bluetooth-connect$$', s: '0', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', s: '3', type: text_with_symbol}
+  - {t: '$$mdi:bluetooth-connect$$', s: '4', type: text_with_symblol}
   - ''
   - Gui+ 4
   - Gui+ 5
@@ -279,9 +279,13 @@ combos:
 - p: [2, 11]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
   l: [base]
+  a: top
+  o: 1.2
 - p: [7, 18]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
   l: [base]
+  a: top
+  o: 1.2
 - p: [3, 13]
   k: '-'
   l: [base]
