@@ -38,7 +38,27 @@ draw_config:
 parse_config:
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: {}
+  raw_binding_map:
+    '&bts 0':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '0'
+      type: text_with_symbol
+    '&bts 1':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '1'
+      type: text_with_symbol
+    '&bts 2':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '2'
+      type: text_with_symbol
+    '&bts 3':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '3'
+      type: text_with_symbol
+    '&bts 4':
+      tap: $$mdi:bluetooth-connect$$
+      shifted: '4'
+      type: text_with_symblol
   sticky_label: $$mdi:circle-small$$
   toggle_label: $$mdi:toggle-switch$$
   tap_toggle_label: tap-toggle
@@ -272,4 +292,10 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
-  zmk_combos: {}
+  zmk_combos:
+    combo_l_alt:
+      align: top
+      offset: 1.2
+    combo_r_alt:
+      align: top
+      offset: 1.2

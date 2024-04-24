@@ -50,6 +50,17 @@
         };
     };
 
+    macros {
+        bts: bts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <1>;
+            bindings =
+                  <&out OUT_BLE>
+                , <&macro_param_1to2>
+                , <&bt BT_SEL MACRO_PLACEHOLDER>;
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
         combo_clear {
@@ -213,7 +224,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &none     &kp LG(N7) &kp LG(N8) &kp LG(N9)  &none          BT_PRF(0)  BT_PRF(1)  BT_PRF(2)  BT_PRF(3)  BT_PRF(4)
+            &none     &kp LG(N7) &kp LG(N8) &kp LG(N9)  &none          &bts 0     &bts 1     &bts 2     &bts 3     &bts 4
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &none     &kp LG(N4) &kp LG(N5) &kp LG(N6)  &none          &none      &kp LG(D)  &kp LG(N)  &kp LG(P)  &none
