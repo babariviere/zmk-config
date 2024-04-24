@@ -280,12 +280,12 @@ combos:
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
   l: [base]
   a: top
-  o: 1.2
+  o: 0.5
 - p: [7, 18]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
   l: [base]
   a: top
-  o: 1.2
+  o: 0.5
 - p: [3, 13]
   k: '-'
   l: [base]
