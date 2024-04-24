@@ -56,31 +56,37 @@
             timeout-ms = <25>;
             key-positions = <LT1 LT0>;
             bindings = <&kp K_CANCEL>;
+            layers = <BASE>;
         };
         combo_escape {
             timeout-ms = <25>;
             key-positions = <LT2 LT1>;
             bindings = <&kp ESCAPE>;
+            layers = <BASE>;
         };
         combo_equal {
             timeout-ms = <25>;
             key-positions = <LT3 LT2>;
             bindings = <&kp EQUAL>;
+            layers = <BASE>;
         };
         combo_l_ctrl {
             timeout-ms = <25>;
             key-positions = <LM3 LM2>;
             bindings = <&sk LCTRL>;
+            layers = <BASE>;
         };
         combo_tab {
             timeout-ms = <25>;
             key-positions = <LM2 LM1>;
             bindings = <&lt MODS TAB>;
+            layers = <BASE>;
         };
         combo_l_cmd {
             timeout-ms = <25>;
             key-positions = <LM4 LM3>;
             bindings = <&sk LCMD>;
+            layers = <BASE>;
         };
 
 
@@ -88,32 +94,38 @@
             timeout-ms = <25>;
             key-positions = <RT2 RT3>;
             bindings = <&kp BACKSPACE>;
+            layers = <BASE>;
         };
         combo_r_ctrl {
             timeout-ms = <25>;
             key-positions = <RM2 RM3>;
             bindings = <&sk LCTRL>;
+            layers = <BASE>;
         };
         combo_enter {
             timeout-ms = <25>;
             key-positions = <RM1 RM2>;
             bindings = <&kp ENTER>;
+            layers = <BASE>;
         };
         combo_r_cmd {
             timeout-ms = <25>;
             key-positions = <RM3 RM4>;
             bindings = <&sk LCMD>;
+            layers = <BASE>;
         };
 
         combo_l_alt {
             timeout-ms = <80>;
             key-positions = <LT2 LM3>;
             bindings = <&sk LALT>;
+            layers = <BASE>;
         };
         combo_r_alt {
             timeout-ms = <80>;
             key-positions = <RT2 RM3>;
             bindings = <&sk LALT>;
+            layers = <BASE>;
         };
 
 
@@ -121,22 +133,26 @@
             timeout-ms = <40>;
             key-positions = <LT1 LM1>;
             bindings = <&kp MINUS>;
+            layers = <BASE>;
         };
         combo_underscore {
             timeout-ms = <40>;
             key-positions = <LM1 LB1>;
             bindings = <&kp UNDERSCORE>;
+            layers = <BASE>;
         };
 
         combo_colon {
             timeout-ms = <40>;
             key-positions = <RT1 RM1>;
             bindings = <&kp COLON>;
+            layers = <BASE>;
         };
         combo_semi {
             timeout-ms = <40>;
             key-positions = <RM1 RB1>;
             bindings = <&kp SEMI>;
+            layers = <BASE>;
         };
     };
 
@@ -166,7 +182,7 @@
             &kp TILDE  &kp AMPS   &kp STAR   &kp PLUS   &none          &none      &kp EQUAL  &kp BSLH   &kp PIPE   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  $       │  %       │  ^       │  -       │   │  :       │  (       │  {       │  [       │          │
-            &none      &kp DLLR   &kp PRCNT  &kp CARET  &kp MINUS      &kp COLN   &kp LPAR   &kp LBRC   &kp LBKT   &none
+            &none      &kp DLLR   &kp PRCNT  &kp CARET  &kp MINUS      &kp COLON  &kp LPAR   &kp LBRC   &kp LBKT   &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  !       │  @       │  #       │  _       │   │  ;       │  )       │  }       │  ]       │          │
             &none      &kp EXCL   &kp AT     &kp HASH   &kp UNDER      &kp SEMI   &kp RPAR   &kp RBRC   &kp RBKT   &none
