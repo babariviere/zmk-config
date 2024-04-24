@@ -33,9 +33,9 @@ layers:
   - /
   - nav
   - LSHFT
-  - {t: SPACE, h: numbers}
-  - symbols
-  symbols:
+  - {t: SPACE, h: num}
+  - sym
+  sym:
   - '~'
   - '&'
   - '*'
@@ -140,7 +140,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  numbers:
+  num:
   - {t: ▽, type: trans}
   - '7'
   - '8'
@@ -172,10 +172,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '0'
-  - functions
+  - fun
   - {type: held}
   - {t: ▽, type: trans}
-  functions:
+  fun:
   - ''
   - F7
   - F8

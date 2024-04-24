@@ -246,11 +246,11 @@ path.combo {
 <g transform="translate(392, 252)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">SPACE</text>
-<text x="0" y="24" class="key hold">numbers</text>
+<text x="0" y="24" class="key hold">num</text>
 </g>
 <g transform="translate(448, 238)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">symbols</text>
+<text x="0" y="0" class="key tap">sym</text>
 </g>
 <g class="combo combopos-0">
 <rect rx="6" ry="6" x="210" y="35" width="28" height="26" class="combo"/>
@@ -325,8 +325,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 336)" class="layer-symbols">
-<text x="0" y="28" class="label">symbols:</text>
+<g transform="translate(30, 336)" class="layer-sym">
+<text x="0" y="28" class="label">sym:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -984,8 +984,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1344)" class="layer-numbers">
-<text x="0" y="28" class="label">numbers:</text>
+<g transform="translate(30, 1344)" class="layer-num">
+<text x="0" y="28" class="label">num:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -1117,7 +1117,7 @@ path.combo {
 </g>
 <g transform="translate(280, 252)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">functions</tspan></text>
+<text x="0" y="0" class="key tap">fun</text>
 </g>
 <g transform="translate(392, 252)" class="key held keypos-32">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -1199,8 +1199,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1680)" class="layer-functions">
-<text x="0" y="28" class="label">functions:</text>
+<g transform="translate(30, 1680)" class="layer-fun">
+<text x="0" y="28" class="label">fun:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 80)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
