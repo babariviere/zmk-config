@@ -51,7 +51,7 @@ layers:
   - '%'
   - ^
   - '-'
-  - COLN
+  - ':'
   - (
   - '{'
   - '['
@@ -248,33 +248,49 @@ layers:
 combos:
 - p: [3, 4]
   k: CANCEL
+  l: [base]
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
+  l: [base]
 - p: [1, 2]
   k: '='
+  l: [base]
 - p: [11, 12]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
+  l: [base]
 - p: [12, 13]
   k: {t: '$$mdi:keyboard-tab$$', h: mods}
+  l: [base]
 - p: [10, 11]
   k: {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
+  l: [base]
 - p: [7, 8]
   k: $$mdi:backspace-outline$$
+  l: [base]
 - p: [17, 18]
   k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
+  l: [base]
 - p: [16, 17]
   k: $$mdi:keyboard-return$$
+  l: [base]
 - p: [18, 19]
   k: {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
+  l: [base]
 - p: [2, 11]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
+  l: [base]
 - p: [7, 18]
   k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
+  l: [base]
 - p: [3, 13]
   k: '-'
+  l: [base]
 - p: [13, 23]
   k: _
+  l: [base]
 - p: [6, 16]
   k: ':'
+  l: [base]
 - p: [16, 26]
   k: ;
+  l: [base]
