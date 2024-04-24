@@ -1,0 +1,280 @@
+layout: {qmk_keyboard: ferris/sweep}
+layers:
+  base:
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - A
+  - R
+  - S
+  - T
+  - G
+  - M
+  - N
+  - E
+  - I
+  - O
+  - Z
+  - X
+  - C
+  - D
+  - V
+  - K
+  - H
+  - ','
+  - .
+  - /
+  - nav
+  - LSHFT
+  - {t: SPACE, h: numbers}
+  - symbols
+  symbols:
+  - '~'
+  - '&'
+  - '*'
+  - +
+  - ''
+  - ''
+  - '='
+  - \
+  - '|'
+  - '`'
+  - ''
+  - $
+  - '%'
+  - ^
+  - '-'
+  - COLN
+  - (
+  - '{'
+  - '['
+  - ''
+  - ''
+  - '!'
+  - '@'
+  - '#'
+  - _
+  - ;
+  - )
+  - '}'
+  - ']'
+  - ''
+  - winnav
+  - ESC
+  - {t: ▽, type: trans}
+  - {type: held}
+  nav:
+  - ESC
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - ''
+  - '&caps_word'
+  - INS
+  - ''
+  - ''
+  - DEL
+  - {t: LSHFT, h: sticky}
+  - {t: LCMD, h: sticky}
+  - LALT
+  - LCTRL
+  - TAB
+  - BSPC
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - PP
+  - PREV
+  - NEXT
+  - ''
+  - ENTER
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - winnav
+  winnav:
+  - ''
+  - Gui+ 7
+  - Gui+ 8
+  - Gui+ 9
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - Gui+ 4
+  - Gui+ 5
+  - Gui+ 6
+  - ''
+  - ''
+  - Gui+ D
+  - Gui+ N
+  - Gui+ P
+  - ''
+  - ''
+  - Gui+ 1
+  - Gui+ 2
+  - Gui+ 3
+  - Gui+ 0
+  - ''
+  - ''
+  - BT NXT
+  - BT PRV
+  - BT CLR
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  numbers:
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - '*'
+  - '%'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - '4'
+  - '5'
+  - '6'
+  - +
+  - EQL
+  - {t: LCTRL, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCMD, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - functions
+  - {type: held}
+  - {t: ▽, type: trans}
+  functions:
+  - ''
+  - F7
+  - F8
+  - F9
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - ''
+  - ''
+  - {t: LCTRL, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCMD, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - ''
+  - F1
+  - F2
+  - F3
+  - ''
+  - ''
+  - F10
+  - F11
+  - F12
+  - ''
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  mods:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - ''
+  - {t: LCTRL, h: sticky}
+  - {t: LALT, h: sticky}
+  - {t: LCMD, h: sticky}
+  - {t: LSHFT, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - {t: RALT, h: sticky}
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [3, 4]
+  k: CANCEL
+- p: [2, 3]
+  k: ESCAPE
+- p: [1, 2]
+  k: '='
+- p: [11, 12]
+  k: {t: LCTRL, h: sticky}
+- p: [12, 13]
+  k: {t: TAB, h: mods}
+- p: [10, 11]
+  k: {t: LCMD, h: sticky}
+- p: [7, 8]
+  k: BACKSPACE
+- p: [17, 18]
+  k: {t: LCTRL, h: sticky}
+- p: [16, 17]
+  k: ENTER
+- p: [18, 19]
+  k: {t: LCMD, h: sticky}
+- p: [2, 11]
+  k: {t: LALT, h: sticky}
+- p: [7, 18]
+  k: {t: LALT, h: sticky}
+- p: [3, 13]
+  k: '-'
+- p: [13, 23]
+  k: _
+- p: [6, 16]
+  k: ':'
+- p: [16, 26]
+  k: ;
