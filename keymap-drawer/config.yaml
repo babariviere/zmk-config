@@ -39,11 +39,11 @@ parse_config:
   preprocess: true
   skip_binding_parsing: false
   raw_binding_map: {}
-  sticky_label: sticky
-  toggle_label: toggle
+  sticky_label: $$mdi:circle-small$$
+  toggle_label: $$mdi:toggle-switch$$
   tap_toggle_label: tap-toggle
   trans_legend:
-    t: ▽
+    tap: $$mdi:chevron-down$$
     type: trans
   mark_alternate_layer_activators: false
   modifier_fn_map:
