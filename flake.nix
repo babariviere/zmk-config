@@ -43,7 +43,7 @@
               ];
 
               board = "nice_nano_v2";
-              shield = "lotus58_%PART%";
+              shield = "cradio_%PART%";
 
               zephyrDepsHash = "sha256-Afxy2Dt3dUnkK+K4evsjyEIHI+sWVbJIWQ826p74SMo=";
 

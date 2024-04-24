@@ -116,21 +116,22 @@
             >;
         };
 
-        tri_layer {
+        numbers {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &trans     &trans     &trans    &bt BT_SEL 0    &trans     &trans     &trans     &trans    &sys_reset
+        //│          │  7       │  8       │  9       │  *       │   │  %       │          │          │          │          │
+            &trans     &kp N7     &kp N8     &kp N9     &kp STAR       &kp PERC   &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &trans     &trans     &trans    &bt BT_SEL 1    &trans     &trans     &trans     &trans    &bootloader
+        //│  -       │  4       │  5       │  6       │  +       │   │  =       │  CTRL    │  ALT     │  CMD     │  SHIFT   │
+            &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS       &kp EQL    &sk LCTRL  &sk LALT   &sk LCMD   &sk LSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
-            &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
+        //│          │  1       │  2       │  3       │  /       │   │          │          │          │          │          │
+            &trans     &kp N1     &kp N2     &kp N3     &kp FSLH       &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &kp N0     &mo FUN        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
+
     };
 };
