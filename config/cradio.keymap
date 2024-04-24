@@ -100,7 +100,7 @@
         combo_r_cmd {
             timeout-ms = <25>;
             key-positions = <RM3 RM4>;
-            bindings = <&sk CMD>;
+            bindings = <&sk LCMD>;
         };
 
         combo_l_alt {
