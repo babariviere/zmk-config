@@ -5,20 +5,22 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#include "zmk-helpers/key-labels/34.h"
+// Cannot use it with keymap-drawer
+/* #include "zmk-helpers/key-labels/34.h" */
+#include "keypos.h"
 
 #define BASE 0
 #define SYM 1
 #define NAV 2
 #define WNAV 3
-#define NUM 5
-#define FUN 6
-#define MODS 7
-#define FRA 8
+#define NUM 4
+#define FUN 5
+#define MODS 6
+#define FRA 7
 #define VOL_DN C_VOL_DN
 #define VOL_UP C_VOL_UP
 
-#define SPC_NUM &lt SPACE NUM
+#define SPC_NUM &lt NUM SPACE
 
 #define BT_PRF(num) &bt BT_SEL num
 
@@ -73,7 +75,7 @@
         combo_tab {
             timeout-ms = <25>;
             key-positions = <LM2 LM1>;
-            bindings = <&lt TAB MODS>;
+            bindings = <&lt MODS TAB>;
         };
         combo_l_cmd {
             timeout-ms = <25>;
