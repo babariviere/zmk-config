@@ -369,7 +369,7 @@ parse_config:
   zmk_combos:
     combo_l_alt:
       align: top
-      offset: 1.2
+      offset: 0.5
     combo_r_alt:
       align: top
-      offset: 1.2
+      offset: 0.5
