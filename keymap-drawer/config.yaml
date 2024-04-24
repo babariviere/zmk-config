@@ -148,6 +148,9 @@ parse_config:
     LCTRL: $$mdi:apple-keyboard-control$$
     LEFT_CONTROL: $$mdi:apple-keyboard-control$$
 
+    LALT: $$mdi:apple-keyboard-option$$
+    RALT: $$mdi:apple-keyboard-option$$
+
     RCTRL: $$mdi:apple-keyboard-control$$
     RIGHT_CONTROL: $$mdi:apple-keyboard-control$$
 
