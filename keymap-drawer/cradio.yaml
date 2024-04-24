@@ -135,7 +135,7 @@ layers:
   - ''
   - BT NXT
   - BT PRV
-  - BT CLR
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: text_with_symbol}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
