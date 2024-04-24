@@ -82,8 +82,8 @@ layers:
   - ''
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
-  - {t: LCMD, h: '$$mdi:circle-small$$'}
-  - LALT
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-tab$$
   - $$mdi:backspace-outline$$
@@ -158,8 +158,8 @@ layers:
   - +
   - EQL
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
-  - {t: LALT, h: '$$mdi:circle-small$$'}
-  - {t: LCMD, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - '1'
@@ -193,8 +193,8 @@ layers:
   - ''
   - ''
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
-  - {t: LALT, h: '$$mdi:circle-small$$'}
-  - {t: LCMD, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - ''
   - F1
@@ -228,8 +228,8 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - ''
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
-  - {t: LALT, h: '$$mdi:circle-small$$'}
-  - {t: LCMD, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -238,7 +238,7 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - ''
   - ''
-  - {t: RALT, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
   - ''
   - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -249,7 +249,7 @@ combos:
 - p: [3, 4]
   k: CANCEL
 - p: [2, 3]
-  k: ESCAPE
+  k: $$mdi:keyboard-esc$$
 - p: [1, 2]
   k: '='
 - p: [11, 12]
@@ -257,7 +257,7 @@ combos:
 - p: [12, 13]
   k: {t: '$$mdi:keyboard-tab$$', h: mods}
 - p: [10, 11]
-  k: {t: LCMD, h: '$$mdi:circle-small$$'}
+  k: {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
 - p: [7, 8]
   k: $$mdi:backspace-outline$$
 - p: [17, 18]
@@ -265,11 +265,11 @@ combos:
 - p: [16, 17]
   k: $$mdi:keyboard-return$$
 - p: [18, 19]
-  k: {t: LCMD, h: '$$mdi:circle-small$$'}
+  k: {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
 - p: [2, 11]
-  k: {t: LALT, h: '$$mdi:circle-small$$'}
+  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
 - p: [7, 18]
-  k: {t: LALT, h: '$$mdi:circle-small$$'}
+  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
 - p: [3, 13]
   k: '-'
 - p: [13, 23]
