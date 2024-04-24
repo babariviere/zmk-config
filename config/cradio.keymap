@@ -212,7 +212,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │  7       │  8       │  9       │  *       │   │  %       │          │          │          │          │
-            &trans     &kp N7     &kp N8     &kp N9     &kp STAR       &kp PERC   &trans     &trans     &trans     &trans
+            &trans     &kp N7     &kp N8     &kp N9     &kp STAR       &kp PRCNT  &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │  4       │  5       │  6       │  +       │   │  =       │  CTRL    │  ALT     │  CMD     │  SHIFT   │
             &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS       &kp EQL    &sk LCTRL  &sk LALT   &sk LCMD   &sk LSHFT
