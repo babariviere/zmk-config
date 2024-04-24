@@ -32,8 +32,8 @@ layers:
   - .
   - /
   - nav
-  - LSHFT
-  - {t: SPACE, h: num}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-space$$', h: num}
   - sym
   sym:
   - '~'
@@ -67,39 +67,39 @@ layers:
   - ']'
   - ''
   - winnav
-  - ESC
+  - $$mdi:keyboard-esc$$
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - ESC
-  - MUTE
-  - VOL DN
-  - VOL UP
+  - $$mdi:keyboard-esc$$
+  - $$mdi:volume-mute$$
+  - $$mdi:volume-minus$$
+  - $$mdi:volume-plus$$
   - ''
   - '&caps_word'
   - INS
   - ''
   - ''
-  - DEL
-  - {t: LSHFT, h: sticky}
+  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - {t: LCMD, h: sticky}
   - LALT
-  - LCTRL
-  - TAB
-  - BSPC
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:keyboard-tab$$
+  - $$mdi:backspace-outline$$
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
+  - $$mdi:arrow-up$$
+  - $$mdi:arrow-right$$
   - ''
-  - PP
-  - PREV
-  - NEXT
+  - $$mdi:play-pause$$
+  - $$mdi:skip-backward$$
+  - $$mdi:skip-forward$$
   - ''
-  - ENTER
+  - $$mdi:keyboard-return$$
   - HOME
-  - PG DN
-  - PG UP
+  - Page Down
+  - Page Up
   - END
   - {type: held}
   - {t: ▽, type: trans}
@@ -157,10 +157,10 @@ layers:
   - '6'
   - +
   - EQL
-  - {t: LCTRL, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
   - {t: LALT, h: sticky}
   - {t: LCMD, h: sticky}
-  - {t: LSHFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - {t: ▽, type: trans}
   - '1'
   - '2'
@@ -192,10 +192,10 @@ layers:
   - F6
   - ''
   - ''
-  - {t: LCTRL, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
   - {t: LALT, h: sticky}
   - {t: LCMD, h: sticky}
-  - {t: LSHFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - ''
   - F1
   - F2
@@ -227,10 +227,10 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - ''
-  - {t: LCTRL, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
   - {t: LALT, h: sticky}
   - {t: LCMD, h: sticky}
-  - {t: LSHFT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -253,17 +253,17 @@ combos:
 - p: [1, 2]
   k: '='
 - p: [11, 12]
-  k: {t: LCTRL, h: sticky}
+  k: {t: '$$mdi:apple-keyboard-control$$', h: sticky}
 - p: [12, 13]
-  k: {t: TAB, h: mods}
+  k: {t: '$$mdi:keyboard-tab$$', h: mods}
 - p: [10, 11]
   k: {t: LCMD, h: sticky}
 - p: [7, 8]
-  k: BACKSPACE
+  k: $$mdi:backspace-outline$$
 - p: [17, 18]
-  k: {t: LCTRL, h: sticky}
+  k: {t: '$$mdi:apple-keyboard-control$$', h: sticky}
 - p: [16, 17]
-  k: ENTER
+  k: $$mdi:keyboard-return$$
 - p: [18, 19]
   k: {t: LCMD, h: sticky}
 - p: [2, 11]
