@@ -68,7 +68,7 @@ layers:
   - ''
   - winnav
   - $$mdi:keyboard-esc$$
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   nav:
   - $$mdi:keyboard-esc$$
@@ -81,8 +81,8 @@ layers:
   - ''
   - ''
   - $$mdi:backspace-reverse-outline$$
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  - {t: LCMD, h: sticky}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
+  - {t: LCMD, h: '$$mdi:circle-small$$'}
   - LALT
   - $$mdi:apple-keyboard-control$$
   - $$mdi:keyboard-tab$$
@@ -102,8 +102,8 @@ layers:
   - Page Up
   - END
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - winnav
   winnav:
   - ''
@@ -137,44 +137,44 @@ layers:
   - BT PRV
   - BT CLR
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   num:
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - '7'
   - '8'
   - '9'
   - '*'
   - '%'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - '-'
   - '4'
   - '5'
   - '6'
   - +
   - EQL
-  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCMD, h: sticky}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
+  - {t: LALT, h: '$$mdi:circle-small$$'}
+  - {t: LCMD, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - '1'
   - '2'
   - '3'
   - /
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - '0'
   - fun
   - {type: held}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   fun:
   - ''
   - F7
@@ -192,10 +192,10 @@ layers:
   - F6
   - ''
   - ''
-  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCMD, h: sticky}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
+  - {t: LALT, h: '$$mdi:circle-small$$'}
+  - {t: LCMD, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - ''
   - F1
   - F2
@@ -206,45 +206,45 @@ layers:
   - F11
   - F12
   - ''
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   mods:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - ''
   - ''
   - ''
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   - {type: held}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - ''
-  - {t: '$$mdi:apple-keyboard-control$$', h: sticky}
-  - {t: LALT, h: sticky}
-  - {t: LCMD, h: sticky}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: sticky}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - ''
-  - ''
-  - {t: RALT, h: sticky}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
+  - {t: LALT, h: '$$mdi:circle-small$$'}
+  - {t: LCMD, h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - ''
   - ''
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: RALT, h: '$$mdi:circle-small$$'}
+  - ''
+  - ''
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
 combos:
 - p: [3, 4]
   k: CANCEL
@@ -253,23 +253,23 @@ combos:
 - p: [1, 2]
   k: '='
 - p: [11, 12]
-  k: {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
 - p: [12, 13]
   k: {t: '$$mdi:keyboard-tab$$', h: mods}
 - p: [10, 11]
-  k: {t: LCMD, h: sticky}
+  k: {t: LCMD, h: '$$mdi:circle-small$$'}
 - p: [7, 8]
   k: $$mdi:backspace-outline$$
 - p: [17, 18]
-  k: {t: '$$mdi:apple-keyboard-control$$', h: sticky}
+  k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
 - p: [16, 17]
   k: $$mdi:keyboard-return$$
 - p: [18, 19]
-  k: {t: LCMD, h: sticky}
+  k: {t: LCMD, h: '$$mdi:circle-small$$'}
 - p: [2, 11]
-  k: {t: LALT, h: sticky}
+  k: {t: LALT, h: '$$mdi:circle-small$$'}
 - p: [7, 18]
-  k: {t: LALT, h: sticky}
+  k: {t: LALT, h: '$$mdi:circle-small$$'}
 - p: [3, 13]
   k: '-'
 - p: [13, 23]
