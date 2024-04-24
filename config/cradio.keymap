@@ -5,6 +5,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#include "zmk-helpers/keypos_def/keypos_34keys.h"
+
 #define BASE 0
 #define SYM 1
 #define NAV 2
@@ -43,6 +45,96 @@
         tri_layer {
             if-layers = <SYM NAV>;
             then-layer = <WNAV>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        combo_clear {
+            timeout-ms = <25>;
+            key-positions = <LT1 LT0>;
+            bindings = <&kp K_CANCEL>;
+        };
+        combo_escape {
+            timeout-ms = <25>;
+            key-positions = <LT2 LT1>;
+            bindings = <&kp ESCAPE>;
+        };
+        combo_equal {
+            timeout-ms = <25>;
+            key-positions = <LT3 LT2>;
+            bindings = <&kp EQUAL>;
+        };
+        combo_l_ctrl {
+            timeout-ms = <25>;
+            key-positions = <LM3 LM2>;
+            bindings = <&sk LCTRL>;
+        };
+        combo_tab {
+            timeout-ms = <25>;
+            key-positions = <LM2 LM1>;
+            bindings = <&lt TAB MODS>;
+        };
+        combo_l_cmd {
+            timeout-ms = <25>;
+            key-positions = <LM4 LM3>;
+            bindings = <&sk LCMD>;
+        };
+
+
+        combo_backspace {
+            timeout-ms = <25>;
+            key-positions = <RT2 RT3>;
+            bindings = <&kp BACKSPACE>;
+        };
+        combo_r_ctrl {
+            timeout-ms = <25>;
+            key-positions = <RM2 RM3>;
+            bindings = <&sk LCTRL>;
+        };
+        combo_enter {
+            timeout-ms = <25>;
+            key-positions = <RM1 RM2>;
+            bindings = <&kp ENTER>;
+        };
+        combo_r_cmd {
+            timeout-ms = <25>;
+            key-positions = <RM3 RM4>;
+            bindings = <&sk CMD>;
+        };
+
+        combo_l_alt {
+            timeout-ms = <80>;
+            key-positions = <LT2 LM3>;
+            bindings = <&sk LALT>;
+        };
+        combo_r_alt {
+            timeout-ms = <80>;
+            key-positions = <RT2 RM3>;
+            bindings = <&sk LALT>;
+        };
+
+
+        combo_minus {
+            timeout-ms = <40>;
+            key-positions = <LT1 LM1>;
+            bindings = <&kp MINUS>;
+        };
+        combo_underscore {
+            timeout-ms = <40>;
+            key-positions = <LM1 LB1>;
+            bindings = <&kp UNDERSCORE>;
+        };
+
+        combo_colon {
+            timeout-ms = <40>;
+            key-positions = <RT1 RM1>;
+            bindings = <&kp COLON>;
+        };
+        combo_semi {
+            timeout-ms = <40>;
+            key-positions = <RM1 RB1>;
+            bindings = <&kp SEMI>;
         };
     };
 
