@@ -22,8 +22,6 @@
 
 #define SPC_NUM &lt NUM SPACE
 
-#define BT_PRF(num) &bt BT_SEL num
-
 
 &sk {
   release-after-ms = <2000>;
