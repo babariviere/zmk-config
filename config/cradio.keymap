@@ -28,6 +28,20 @@
 };
 
 / {
+  macros {
+    bts: bts {
+      compatible = "zmk,behavior-macro-one-param";
+      #binding-cells = <1>;
+      bindings
+        = <&out OUT_BLE>
+        , <&macro_param_1to2>
+        , <&bt BT_SEL MACRO_PLACEHOLDER>;
+    };
+  };
+};
+
+
+/ {
     behaviors {
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
@@ -45,17 +59,6 @@
         tri_layer {
             if-layers = <SYM NAV>;
             then-layer = <WNAV>;
-        };
-    };
-
-    macros {
-        bts: bts {
-            compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings =
-                  <&out OUT_BLE>
-                , <&macro_param_1to2>
-                , <&bt BT_SEL MACRO_PLACEHOLDER>;
         };
     };
 
@@ -190,10 +193,10 @@
         //│  ~       │  &       │  *       │  +       │          │   │          │  =       │  \       │  |       │  `       │
             &kp TILDE  &kp AMPS   &kp STAR   &kp PLUS   &none          &none      &kp EQUAL  &kp BSLH   &kp PIPE   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  $       │  %       │  ^       │  -       │   │  :       │  (       │  {       │  [       │          │
+        //│          │  $       │  %       │  ^       │  -       │   │  :       │         │         │         │          │
             &none      &kp DLLR   &kp PRCNT  &kp CARET  &kp MINUS      &kp COLON  &kp LPAR   &kp LBRC   &kp LBKT   &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  !       │  @       │  #       │  _       │   │  ;       │  )       │  }       │  ]       │          │
+        //│          │  !       │  @       │  #       │  _       │   │  ;       │         │         │        │          │
             &none      &kp EXCL   &kp AT     &kp HASH   &kp UNDER      &kp SEMI   &kp RPAR   &kp RBRC   &kp RBKT   &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &mo WNAV   &kp ESC        &trans     &trans
