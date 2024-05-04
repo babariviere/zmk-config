@@ -278,7 +278,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &none      &none      &none      &none      &none
+          &bootloader  &trans     &trans     &trans     &trans         &none      &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │          │          │          │          │   │          │  CTRL    │  ALT     │  CMD     │  SHIFT   │
             &trans     &trans     &trans     &trans     &trans         &none      &sk LCTRL  &sk LALT   &sk LCMD   &sk LSHFT
