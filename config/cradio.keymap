@@ -201,7 +201,7 @@
         //│          │  !       │  @       │  #       │  _       │   │  ;       │         │         │        │          │
             &none      &kp EXCL   &kp AT     &kp HASH   &kp UNDER      &kp SEMI   &kp RPAR   &kp RBRC   &kp RBKT   &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &mo WNAV   &kp ESC        &trans     &trans
+                                             &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -218,7 +218,7 @@
         //│          │  PLAY    │ PREVIOUS │  NEXT    │          │   │  ENTER   │  HOME    │  PG DOWN │  PG UP   │  END     │
             &none      &kp C_PP  &kp C_PREV &kp C_NEXT  &none          &kp ENTER  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &mo WNAV
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
