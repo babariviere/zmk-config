@@ -211,7 +211,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   mods:
-  - {t: '$$mdi:chevron-down$$', type: trans}
+  - '&bootloader'
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
