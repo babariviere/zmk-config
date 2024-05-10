@@ -12,14 +12,14 @@ layers:
   - Y
   - ''''
   - A
-  - R
-  - S
-  - T
+  - {t: R, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - M
-  - N
-  - E
-  - I
+  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: I, h: '$$mdi:apple-keyboard-command$$'}
   - O
   - Z
   - X
@@ -83,8 +83,8 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
+  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
   - $$mdi:keyboard-tab$$
   - $$mdi:backspace-outline$$
   - $$mdi:arrow-left$$
@@ -255,37 +255,15 @@ combos:
 - p: [1, 2]
   k: '='
   l: [base]
-- p: [11, 12]
-  k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
-  l: [base]
 - p: [12, 13]
   k: {t: '$$mdi:keyboard-tab$$', h: mods}
-  l: [base]
-- p: [10, 11]
-  k: {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
   l: [base]
 - p: [7, 8]
   k: $$mdi:backspace-outline$$
   l: [base]
-- p: [17, 18]
-  k: {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
-  l: [base]
 - p: [16, 17]
   k: $$mdi:keyboard-return$$
   l: [base]
-- p: [18, 19]
-  k: {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
-  l: [base]
-- p: [2, 11]
-  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
-  l: [base]
-  a: top
-  o: 0.5
-- p: [7, 18]
-  k: {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
-  l: [base]
-  a: top
-  o: 0.5
 - p: [3, 13]
   k: '-'
   l: [base]
