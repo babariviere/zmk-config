@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: ferris/sweep}
+layout: {zmk_keyboard: cradio}
 layers:
   base:
   - Q
@@ -210,45 +210,7 @@ layers:
   - {type: held}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  mods:
-  - '&bootloader'
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
-  - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - ''
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - ''
-  - ''
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
-  - ''
-  - ''
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
 combos:
-- p: [3, 4]
-  k: CANCEL
-  l: [base]
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
   l: [base]
@@ -256,7 +218,7 @@ combos:
   k: '='
   l: [base]
 - p: [12, 13]
-  k: {t: '$$mdi:keyboard-tab$$', h: mods}
+  k: $$mdi:keyboard-tab$$
   l: [base]
 - p: [7, 8]
   k: $$mdi:backspace-outline$$
@@ -265,14 +227,29 @@ combos:
   k: $$mdi:keyboard-return$$
   l: [base]
 - p: [3, 13]
-  k: '-'
-  l: [base]
-- p: [13, 23]
-  k: _
+  k: {t: 'LPAR,', s: <}
   l: [base]
 - p: [6, 16]
+  k: {t: 'RPAR,', s: '>'}
+  l: [base]
+- p: [2, 12]
+  k: {t: 'LBRC,', s: '['}
+  l: [base]
+- p: [7, 17]
+  k: {t: 'RBRC,', s: ']'}
+  l: [base]
+- p: [4, 14]
+  k: '-'
+  l: [base]
+- p: [14, 24]
+  k: _
+  l: [base]
+- p: [5, 15]
   k: ':'
   l: [base]
-- p: [16, 26]
+- p: [15, 25]
   k: ;
+  l: [base]
+- p: [20, 21]
+  k: '&bootloader'
   l: [base]
