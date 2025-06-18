@@ -109,6 +109,7 @@
 
     combos {
         compatible = "zmk,combos";
+
         combo_escape {
             timeout-ms = <25>;
             key-positions = <LT2 LT1>;
@@ -194,7 +195,7 @@
             layers = <BASE>;
         };
 
-        combo_boot = {
+        combo_boot {
             timeout-ms = <40>;
             key-positions = <LB4 LB3>;
             bindings = <&bootloader>;
