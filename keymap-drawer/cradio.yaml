@@ -227,16 +227,16 @@ combos:
   k: $$mdi:keyboard-return$$
   l: [base]
 - p: [3, 13]
-  k: {t: 'LPAR,', s: <}
+  k: {t: (, h: <}
   l: [base]
 - p: [6, 16]
-  k: {t: 'RPAR,', s: '>'}
+  k: {t: ), h: '>'}
   l: [base]
 - p: [2, 12]
-  k: {t: 'LBRC,', s: '['}
+  k: {t: '{', h: '['}
   l: [base]
 - p: [7, 17]
-  k: {t: 'RBRC,', s: ']'}
+  k: {t: '}', h: ']'}
   l: [base]
 - p: [4, 14]
   k: '-'
@@ -251,5 +251,5 @@ combos:
   k: ;
   l: [base]
 - p: [20, 21]
-  k: '&bootloader'
+  k: BOOT
   l: [base]

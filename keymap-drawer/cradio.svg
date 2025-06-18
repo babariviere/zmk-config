@@ -468,23 +468,23 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="182" y="59" width="28" height="26" class="combo"/>
-<text x="196" y="72" class="combo tap">LPAR,</text>
-<text x="196" y="61" class="combo shifted">&lt;</text>
+<text x="196" y="72" class="combo tap">(</text>
+<text x="196" y="83" class="combo hold">&lt;</text>
 </g>
 <g class="combo combopos-6">
 <rect rx="6" ry="6" x="462" y="59" width="28" height="26" class="combo"/>
-<text x="476" y="72" class="combo tap">RPAR,</text>
-<text x="476" y="61" class="combo shifted">&gt;</text>
+<text x="476" y="72" class="combo tap">)</text>
+<text x="476" y="83" class="combo hold">&gt;</text>
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="126" y="43" width="28" height="26" class="combo"/>
-<text x="140" y="56" class="combo tap">LBRC,</text>
-<text x="140" y="45" class="combo shifted">[</text>
+<text x="140" y="56" class="combo tap">{</text>
+<text x="140" y="67" class="combo hold">[</text>
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="518" y="43" width="28" height="26" class="combo"/>
-<text x="532" y="56" class="combo tap">RBRC,</text>
-<text x="532" y="45" class="combo shifted">]</text>
+<text x="532" y="56" class="combo tap">}</text>
+<text x="532" y="67" class="combo hold">]</text>
 </g>
 <g class="combo combopos-9">
 <rect rx="6" ry="6" x="238" y="67" width="28" height="26" class="combo"/>
@@ -504,7 +504,7 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-13">
 <rect rx="6" ry="6" x="42" y="163" width="28" height="26" class="combo"/>
-<text x="56" y="176" class="combo tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+<text x="56" y="176" class="combo tap">BOOT</text>
 </g>
 </g>
 </g>
