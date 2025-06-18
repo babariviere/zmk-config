@@ -70,32 +70,32 @@
             hold-trigger-on-release;             // delay positional check until key-release
         };
 
-        lpar_lt: lpar_lt  {
+        lpar_lt: lpar_lt {
             compatible = "zmk,behavior-mod-morph";
             mods = <(MOD_LSFT | MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings = <&kp LPAR, &kp LT>;
+            bindings = <&kp LPAR>, <&kp LT>;
         };
 
-        rpar_gt: rpar_gt  {
+        rpar_gt: rpar_gt {
             compatible = "zmk,behavior-mod-morph";
             mods = <(MOD_LSFT | MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings = <&kp RPAR, &kp GT>;
+            bindings = <&kp RPAR>, <&kp GT>;
         };
 
-        lbrc_lbkt: lbrc_lbkt  {
+        lbrc_lbkt: lbrc_lbkt {
             compatible = "zmk,behavior-mod-morph";
             mods = <(MOD_LSFT | MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings = <&kp LBRC, &kp LBKT>;
+            bindings = <&kp LBRC>, <&kp LBKT>;
         };
 
-        rbrc_rbkt: rbrc_rbkt  {
+        rbrc_rbkt: rbrc_rbkt {
             compatible = "zmk,behavior-mod-morph";
             mods = <(MOD_LSFT | MOD_RSFT)>;
             #binding-cells = <0>;
-            bindings = <&kp RBRC, &kp RBKT>;
+            bindings = <&kp RBRC>, <&kp RBKT>;
         };
     };
 
