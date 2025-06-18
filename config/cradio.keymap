@@ -51,7 +51,7 @@
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <150>;
             #binding-cells = <2>;
@@ -63,13 +63,41 @@
         hmr: hmr {
             compatible = "zmk,behavior-hold-tap";
             flavor = "balanced";
-            tapping-term-ms = <280>;
+            tapping-term-ms = <220>;
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <150>;
             #binding-cells = <2>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
             hold-trigger-on-release;             // delay positional check until key-release
+        };
+
+        lpar_lt: lpar_lt  {
+            compatible = "zmk,behavior-mod-morph";
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings = <&kp LPAR, &kp LT>;
+        };
+
+        rpar_gt: rpar_gt  {
+            compatible = "zmk,behavior-mod-morph";
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings = <&kp RPAR, &kp GT>;
+        };
+
+        lbrc_lbkt: lbrc_lbkt  {
+            compatible = "zmk,behavior-mod-morph";
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings = <&kp LBRC, &kp LBKT>;
+        };
+
+        rbrc_rbkt: rbrc_rbkt  {
+            compatible = "zmk,behavior-mod-morph";
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            #binding-cells = <0>;
+            bindings = <&kp RBRC, &kp RBKT>;
         };
     };
 
@@ -83,12 +111,6 @@
 
     combos {
         compatible = "zmk,combos";
-        combo_clear {
-            timeout-ms = <25>;
-            key-positions = <LT1 LT0>;
-            bindings = <&kp K_CANCEL>;
-            layers = <BASE>;
-        };
         combo_escape {
             timeout-ms = <25>;
             key-positions = <LT2 LT1>;
@@ -122,29 +144,62 @@
             layers = <BASE>;
         };
 
-        combo_minus {
+        combo_lpar {
             timeout-ms = <40>;
             key-positions = <LT1 LM1>;
+            bindings = <&lpar_lt>;
+            layers = <BASE>;
+        };
+        combo_rpar {
+            timeout-ms = <40>;
+            key-positions = <RT1 RM1>;
+            bindings = <&rpar_gt>;
+            layers = <BASE>;
+        };
+
+        combo_lbrc {
+            timeout-ms = <40>;
+            key-positions = <LT2 LM2>;
+            bindings = <&lbrc_lbkt>;
+            layers = <BASE>;
+        };
+        combo_rbrc {
+            timeout-ms = <40>;
+            key-positions = <RT2 RM2>;
+            bindings = <&rbrc_rbkt>;
+            layers = <BASE>;
+        };
+
+        combo_minus {
+            timeout-ms = <40>;
+            key-positions = <LT0 LM0>;
             bindings = <&kp MINUS>;
             layers = <BASE>;
         };
         combo_underscore {
             timeout-ms = <40>;
-            key-positions = <LM1 LB1>;
+            key-positions = <LM0 LB0>;
             bindings = <&kp UNDERSCORE>;
             layers = <BASE>;
         };
 
         combo_colon {
             timeout-ms = <40>;
-            key-positions = <RT1 RM1>;
+            key-positions = <RT0 RM0>;
             bindings = <&kp COLON>;
             layers = <BASE>;
         };
         combo_semi {
             timeout-ms = <40>;
-            key-positions = <RM1 RB1>;
+            key-positions = <RM0 RB0>;
             bindings = <&kp SEMI>;
+            layers = <BASE>;
+        };
+
+        combo_boot = {
+            timeout-ms = <40>;
+            key-positions = <LB4 LB3>;
+            bindings = <&bootloader>;
             layers = <BASE>;
         };
     };
@@ -170,7 +225,7 @@
 
         sym {
             bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+       //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  ~       │  &       │  *       │  +       │          │   │          │  =       │  \       │  |       │  `       │
             &kp TILDE  &kp AMPS   &kp STAR   &kp PLUS   &none          &none      &kp EQUAL  &kp BSLH   &kp PIPE   &kp GRAVE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
@@ -247,23 +302,6 @@
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  F1      │  F2      │  F3      │          │   │          │  F10     │  F11     │  F12     │          │
             &none      &kp F1     &kp F2     &kp F3     &none          &none      &kp F10    &kp F11    &kp F12    &none
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
-        };
-
-        mods {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │          │
-          &bootloader  &trans     &trans     &trans     &trans         &none      &none      &none      &none      &none
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  -       │          │          │          │          │   │          │  CTRL    │  ALT     │  CMD     │  SHIFT   │
-            &trans     &trans     &trans     &trans     &trans         &none      &sk LCTRL  &sk LALT   &sk LCMD   &sk LSHFT
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │  RALT    │          │          │
-            &trans     &trans     &trans     &trans     &trans         &none      &none      &sk RALT   &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
