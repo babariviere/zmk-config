@@ -16,8 +16,6 @@
 #define WNAV 3
 #define NUM 4
 #define FUN 5
-#define MODS 6
-#define FRA 7
 #define VOL_DN C_VOL_DN
 #define VOL_UP C_VOL_UP
 
@@ -126,7 +124,7 @@
         combo_tab {
             timeout-ms = <25>;
             key-positions = <LM2 LM1>;
-            bindings = <&lt MODS TAB>;
+            bindings = <&kp TAB>;
             layers = <BASE>;
         };
 
