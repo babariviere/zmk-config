@@ -13,13 +13,9 @@
 #define BASE 0
 #define SYM 1
 #define NAV 2
-#define WNAV 3
-#define NUM 4
-#define FUN 5
+#define NUM 3
 #define VOL_DN C_VOL_DN
 #define VOL_UP C_VOL_UP
-
-#define SPC_NUM &lt NUM SPACE
 
 #define HRML(k1,k2,k3) &hml LCMD k1  &hml LALT k2 &hml LCTRL k3
 #define HRMR(k1,k2,k3) &hmr LCTRL k1 &hmr LALT k2 &hmr LCMD k3
@@ -103,7 +99,7 @@
         compatible = "zmk,conditional-layers";
         tri_layer {
             if-layers = <SYM NAV>;
-            then-layer = <WNAV>;
+            then-layer = <NUM>;
         };
     };
 
@@ -114,12 +110,6 @@
             timeout-ms = <25>;
             key-positions = <LT2 LT1>;
             bindings = <&kp ESCAPE>;
-            layers = <BASE>;
-        };
-        combo_equal {
-            timeout-ms = <25>;
-            key-positions = <LT3 LT2>;
-            bindings = <&kp EQUAL>;
             layers = <BASE>;
         };
         combo_tab {
@@ -144,54 +134,28 @@
         };
 
         combo_lpar {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             key-positions = <LT1 LM1>;
             bindings = <&lpar_lt>;
             layers = <BASE>;
         };
         combo_rpar {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             key-positions = <RT1 RM1>;
             bindings = <&rpar_gt>;
             layers = <BASE>;
         };
 
         combo_lbrc {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             key-positions = <LT2 LM2>;
             bindings = <&lbrc_lbkt>;
             layers = <BASE>;
         };
         combo_rbrc {
-            timeout-ms = <40>;
+            timeout-ms = <50>;
             key-positions = <RT2 RM2>;
             bindings = <&rbrc_rbkt>;
-            layers = <BASE>;
-        };
-
-        combo_minus {
-            timeout-ms = <40>;
-            key-positions = <LT0 LM0>;
-            bindings = <&kp MINUS>;
-            layers = <BASE>;
-        };
-        combo_underscore {
-            timeout-ms = <40>;
-            key-positions = <LM0 LB0>;
-            bindings = <&kp UNDERSCORE>;
-            layers = <BASE>;
-        };
-
-        combo_colon {
-            timeout-ms = <40>;
-            key-positions = <RT0 RM0>;
-            bindings = <&kp COLON>;
-            layers = <BASE>;
-        };
-        combo_semi {
-            timeout-ms = <40>;
-            key-positions = <RM0 RB0>;
-            bindings = <&kp SEMI>;
             layers = <BASE>;
         };
 
@@ -217,22 +181,22 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ / ?      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &mo NAV     &kp LSHFT      SPC_NUM    &mo SYM
+                                            &mo NAV     &kp LSHFT      &kp SPC    &mo SYM
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
         sym {
             bindings = <
-       //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ~       │  &       │  *       │  +       │          │   │          │  =       │  \       │  |       │  `       │
-            &kp TILDE  &kp AMPS   &kp STAR   &kp PLUS   &none          &none      &kp EQUAL  &kp BSLH   &kp PIPE   &kp GRAVE
+        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
+        //│  `       │  &       │  *       │  +       │          │   │          │  =       │  \       │  |       │  ~       │
+            &kp GRAVE  &kp AMPS   &kp STAR   &kp PLUS   &none          &none      &kp EQUAL  &kp BSLH   &kp PIPE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  $       │  %       │  ^       │  -       │   │  :       │         │         │         │          │
-            &none      &kp DLLR   &kp PRCNT  &kp CARET  &kp MINUS      &kp COLON  &kp LPAR   &kp LBRC   &kp LBKT   &none
+        //│          │  $       │  %       │  ^       │  -       │   │  :       │          │          │          │          │
+            &none      &kp DLLR   &kp PRCNT  &kp CARET  &kp MINUS      &kp COLON  &kp LCTRL  &kp LALT   &kp LCMD   &kp LSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  !       │  @       │  #       │  _       │   │  ;       │         │         │        │          │
-            &none      &kp EXCL   &kp AT     &kp HASH   &kp UNDER      &kp SEMI   &kp RPAR   &kp RBRC   &kp RBKT   &none
+        //│          │  !       │  @       │  #       │  _       │   │  ;       │          │          │          │          │
+            &none      &kp EXCL   &kp AT     &kp HASH   &kp UNDER      &kp SEMI   &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &kp ESC        &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -242,31 +206,14 @@
         nav {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ESCAPE  │  MUTE    │ VOL DOWN │  VOL UP  │          │   │ CAPS WORD│  INSERT  │          │          │  DEL     │
-            &kp ESC   &kp C_MUTE &kp VOL_DN &kp VOL_UP  &none         &caps_word  &kp INS    &none      &none      &kp DEL
+        //│  ESCAPE  │  MUTE    │ VOL DOWN │  VOL UP  │          │   │          │  HOME    │  UP      │  END     │          │
+            &kp ESC   &kp C_MUTE &kp VOL_DN &kp VOL_UP  &none          &none     &kp HOME   &kp UP      &kp END    &one
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  SHIFT   │  CMD     │  ALT     │  CTRL    │  TAB     │   │ BACKSPACE│  LEFT    │  DOWN    │  UP      │  RIGHT   │
-            &sk LSHFT  &sk LCMD   &sk LALT   &sk LCTRL  &kp TAB        &kp BSPC   &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT
+        //│  SHIFT   │  CMD     │  ALT     │  CTRL    │  TAB     │   │ BACKSPACE│  LEFT    │  ENTER   │  RIGHT   │  DEL     │
+            &sk LSHFT  &sk LCMD   &sk LALT   &sk LCTRL  &kp TAB        &kp BSPC   &kp LEFT   &kp ENTER  &kp RIGHT  &kp DEL
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  PLAY    │ PREVIOUS │  NEXT    │          │   │  ENTER   │  HOME    │  PG DOWN │  PG UP   │  END     │
-            &none      &kp C_PP  &kp C_PREV &kp C_NEXT  &none          &kp ENTER  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
-        };
-
-        winnav {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &none     &kp LG(N7) &kp LG(N8) &kp LG(N9)  &none          &bts 0     &bts 1     &bts 2     &bts 3     &bts 4
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &none     &kp LG(N4) &kp LG(N5) &kp LG(N6)  &none          &none      &kp LG(D)  &kp LG(N)  &kp LG(P)  &none
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &none     &kp LG(N1) &kp LG(N2) &kp LG(N3) &kp LG(N0)      &none      &none     &bt BT_NXT &bt BT_PRV &bt BT_CLR
+        //│          │  PLAY    │ PREVIOUS │  NEXT    │          │   │          │  PG_UP   │  DOWN    │ PG DOWN  │  END     │
+            &none      &kp C_PP  &kp C_PREV &kp C_NEXT  &none          &none     &kp PG_UP  &kp DOWN  &kp PG_DOWN &kp END
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -276,31 +223,14 @@
         num {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  7       │  8       │  9       │  *       │   │  %       │          │          │          │          │
-            &trans     &kp N7     &kp N8     &kp N9     &kp STAR       &kp PRCNT  &trans     &trans     &trans     &trans
+        //│  /       │  7       │  8       │  9       │  *       │   │          │          │          │          │          │
+            &kp SLASH  &kp N7     &kp N8     &kp N9     &kp STAR       &bts 0     &bts 1     &bts 2     &bts 3     &bts 4
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  -       │  4       │  5       │  6       │  +       │   │  =       │  CTRL    │  ALT     │  CMD     │  SHIFT   │
             &kp MINUS  &kp N4     &kp N5     &kp N6     &kp PLUS       &kp EQL    &sk LCTRL  &sk LALT   &sk LCMD   &sk LSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  1       │  2       │  3       │  /       │   │          │          │          │          │          │
-            &trans     &kp N1     &kp N2     &kp N3     &kp FSLH       &trans     &trans     &trans     &trans     &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp N0     &mo FUN        &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
-        };
-
-        fun {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │  F7      │  F8      │  F9      │          │   │          │          │          │          │          │
-            &none      &kp F7     &kp F8     &kp F9     &none          &none      &none      &none      &none      &none
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  F4      │  F5      │  F6      │          │   │          │  CTRL    │  ALT     │  CMD     │  SHIFT   │
-            &none      &kp F4     &kp F5     &kp F6     &none          &none      &sk LCTRL  &sk LALT   &sk LCMD   &sk LSHFT
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  F1      │  F2      │  F3      │          │   │          │  F10     │  F11     │  F12     │          │
-            &none      &kp F1     &kp F2     &kp F3     &none          &none      &kp F10    &kp F11    &kp F12    &none
+        //│          │  1       │  2       │  3       │  0       │   │          │          │          │          │          │
+            &trans     &kp N1     &kp N2     &kp N3     &kp N0         &trans     &trans     &bt BT_NXT &bt BT_PRV &bt BT_CLR
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
