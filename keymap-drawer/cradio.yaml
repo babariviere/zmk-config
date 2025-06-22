@@ -99,7 +99,7 @@ layers:
   - ''
   - Page Up
   - $$mdi:arrow-down$$
-  - PG DOWN
+  - Page Down
   - END
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
@@ -121,7 +121,7 @@ layers:
   - '5'
   - '6'
   - +
-  - EQL
+  - '='
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
