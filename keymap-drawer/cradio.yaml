@@ -33,10 +33,10 @@ layers:
   - /
   - nav
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-space$$', h: num}
+  - SPC
   - sym
   sym:
-  - '~'
+  - '`'
   - '&'
   - '*'
   - +
@@ -45,26 +45,26 @@ layers:
   - '='
   - \
   - '|'
-  - '`'
+  - '~'
   - ''
   - $
   - '%'
   - ^
   - '-'
   - ':'
-  - (
-  - '{'
-  - '['
-  - ''
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-shift$$
   - ''
   - '!'
   - '@'
   - '#'
   - _
   - ;
-  - )
-  - '}'
-  - ']'
+  - ''
+  - ''
+  - ''
   - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   - $$mdi:keyboard-esc$$
@@ -76,11 +76,11 @@ layers:
   - $$mdi:volume-minus$$
   - $$mdi:volume-plus$$
   - ''
-  - '&caps_word'
-  - INS
   - ''
-  - ''
-  - $$mdi:backspace-reverse-outline$$
+  - HOME
+  - $$mdi:arrow-up$$
+  - END
+  - '&one'
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
@@ -88,69 +88,34 @@ layers:
   - $$mdi:keyboard-tab$$
   - $$mdi:backspace-outline$$
   - $$mdi:arrow-left$$
-  - $$mdi:arrow-down$$
-  - $$mdi:arrow-up$$
+  - $$mdi:keyboard-return$$
   - $$mdi:arrow-right$$
+  - $$mdi:backspace-reverse-outline$$
   - ''
   - $$mdi:play-pause$$
   - $$mdi:skip-backward$$
   - $$mdi:skip-forward$$
   - ''
-  - $$mdi:keyboard-return$$
-  - HOME
-  - Page Down
+  - ''
   - Page Up
+  - $$mdi:arrow-down$$
+  - PG DOWN
   - END
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  winnav:
-  - ''
-  - Gui+ 7
-  - Gui+ 8
-  - Gui+ 9
-  - ''
+  num:
+  - /
+  - '7'
+  - '8'
+  - '9'
+  - '*'
   - {t: '$$mdi:bluetooth-connect$$', s: '0', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '1', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '2', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '3', type: text_with_symbol}
   - {t: '$$mdi:bluetooth-connect$$', s: '4', type: text_with_symblol}
-  - ''
-  - Gui+ 4
-  - Gui+ 5
-  - Gui+ 6
-  - ''
-  - ''
-  - Gui+ D
-  - Gui+ N
-  - Gui+ P
-  - ''
-  - ''
-  - Gui+ 1
-  - Gui+ 2
-  - Gui+ 3
-  - Gui+ 0
-  - ''
-  - ''
-  - BT NXT
-  - BT PRV
-  - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: text_with_symbol}
-  - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {type: held}
-  num:
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - '7'
-  - '8'
-  - '9'
-  - '*'
-  - '%'
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
   - '-'
   - '4'
   - '5'
@@ -165,57 +130,19 @@ layers:
   - '1'
   - '2'
   - '3'
-  - /
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
-  - {t: '$$mdi:chevron-down$$', type: trans}
   - '0'
-  - fun
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - {t: '$$mdi:chevron-down$$', type: trans}
+  - BT NXT
+  - BT PRV
+  - {t: '$$mdi:bluetooth$$', s: '$$mdi:close-thick$$', type: text_with_symbol}
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
-  fun:
-  - ''
-  - F7
-  - F8
-  - F9
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - F4
-  - F5
-  - F6
-  - ''
-  - ''
-  - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
-  - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
-  - ''
-  - F1
-  - F2
-  - F3
-  - ''
-  - ''
-  - F10
-  - F11
-  - F12
-  - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
-  - {type: held}
-  - {t: '$$mdi:chevron-down$$', type: trans}
 combos:
 - p: [2, 3]
   k: $$mdi:keyboard-esc$$
-  l: [base]
-- p: [1, 2]
-  k: '='
   l: [base]
 - p: [12, 13]
   k: $$mdi:keyboard-tab$$
@@ -237,18 +164,6 @@ combos:
   l: [base]
 - p: [7, 17]
   k: {t: '}', h: ']'}
-  l: [base]
-- p: [4, 14]
-  k: '-'
-  l: [base]
-- p: [14, 24]
-  k: _
-  l: [base]
-- p: [5, 15]
-  k: ':'
-  l: [base]
-- p: [15, 25]
-  k: ;
   l: [base]
 - p: [20, 21]
   k: BOOT
