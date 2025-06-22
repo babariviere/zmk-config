@@ -1,2 +1,8 @@
 /.direnv
 /result
+
+/modules
+/zephyr
+/zmk
+/zmk-helpers
+/.west

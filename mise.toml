@@ -1,0 +1,17 @@
+[tools]
+cmake = "latest"
+pipx = "latest"
+"pipx:west" = "latest"
+python = "latest"
+
+[tasks.setup]
+run = [
+  "west init -l app/ --mf {{config_root}}/config/west.yml",
+  "west update",
+  "west zephyr-export"
+]
+
+[tasks.build]
+# Not working yet...
+run = "west build -b nice_nano_v2 -- -DZMK_CONFIG=\"{{config_root}}/config\""
+dir = "zmk/app"
