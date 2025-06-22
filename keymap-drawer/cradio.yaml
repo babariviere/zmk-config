@@ -80,7 +80,7 @@ layers:
   - HOME
   - $$mdi:arrow-up$$
   - END
-  - '&one'
+  - ''
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
