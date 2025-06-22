@@ -207,7 +207,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  ESCAPE  │  MUTE    │ VOL DOWN │  VOL UP  │          │   │          │  HOME    │  UP      │  END     │          │
-            &kp ESC   &kp C_MUTE &kp VOL_DN &kp VOL_UP  &none          &none     &kp HOME   &kp UP      &kp END    &one
+            &kp ESC   &kp C_MUTE &kp VOL_DN &kp VOL_UP  &none          &none     &kp HOME   &kp UP      &kp END    &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  SHIFT   │  CMD     │  ALT     │  CTRL    │  TAB     │   │ BACKSPACE│  LEFT    │  ENTER   │  RIGHT   │  DEL     │
             &sk LSHFT  &sk LCMD   &sk LALT   &sk LCTRL  &kp TAB        &kp BSPC   &kp LEFT   &kp ENTER  &kp RIGHT  &kp DEL
