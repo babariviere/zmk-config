@@ -80,17 +80,17 @@ layers:
   - HOME
   - $$mdi:arrow-up$$
   - END
-  - ''
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
   - $$mdi:keyboard-tab$$
-  - $$mdi:backspace-outline$$
-  - $$mdi:arrow-left$$
   - $$mdi:keyboard-return$$
+  - $$mdi:arrow-left$$
+  - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
-  - $$mdi:backspace-reverse-outline$$
+  - $$mdi:backspace-outline$$
   - ''
   - $$mdi:play-pause$$
   - $$mdi:skip-backward$$
@@ -98,9 +98,9 @@ layers:
   - ''
   - ''
   - Page Up
-  - $$mdi:arrow-down$$
+  - ''
   - Page Down
-  - END
+  - ''
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
