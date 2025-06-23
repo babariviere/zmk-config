@@ -46,7 +46,7 @@ layers:
   - \
   - '|'
   - '~'
-  - ''
+  - \
   - $
   - '%'
   - ^
@@ -67,7 +67,7 @@ layers:
   - ''
   - ''
   - {t: '$$mdi:chevron-down$$', type: trans}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {type: held}
   nav:
@@ -77,30 +77,30 @@ layers:
   - $$mdi:volume-plus$$
   - ''
   - ''
-  - HOME
-  - $$mdi:arrow-up$$
-  - END
+  - ''
+  - ''
+  - ''
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-option$$', h: '$$mdi:circle-small$$'}
   - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
   - $$mdi:keyboard-tab$$
-  - $$mdi:keyboard-return$$
+  - $$mdi:backspace-outline$$
   - $$mdi:arrow-left$$
   - $$mdi:arrow-down$$
+  - $$mdi:arrow-up$$
   - $$mdi:arrow-right$$
-  - $$mdi:backspace-outline$$
   - ''
   - $$mdi:play-pause$$
   - $$mdi:skip-backward$$
   - $$mdi:skip-forward$$
   - ''
-  - ''
-  - Page Up
-  - ''
+  - $$mdi:keyboard-return$$
+  - HOME
   - Page Down
-  - ''
+  - Page Up
+  - END
   - {type: held}
   - {t: '$$mdi:chevron-down$$', type: trans}
   - {t: '$$mdi:chevron-down$$', type: trans}
