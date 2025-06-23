@@ -192,13 +192,13 @@
         //│  `       │  &       │  *       │  +       │          │   │          │  =       │  \       │  |       │  ~       │
             &kp GRAVE  &kp AMPS   &kp STAR   &kp PLUS   &none          &none      &kp EQUAL  &kp BSLH   &kp PIPE   &kp TILDE
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │  $       │  %       │  ^       │  -       │   │  :       │          │          │          │          │
-            &none      &kp DLLR   &kp PRCNT  &kp CARET  &kp MINUS      &kp COLON  &kp LCTRL  &kp LALT   &kp LCMD   &kp LSHFT
+        //│  \       │  $       │  %       │  ^       │  -       │   │  :       │          │          │          │          │
+            &kp BSLH   &kp DLLR   &kp PRCNT  &kp CARET  &kp MINUS      &kp COLON  &kp LCTRL  &kp LALT   &kp LCMD   &kp LSHFT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │  !       │  @       │  #       │  _       │   │  ;       │          │          │          │          │
             &none      &kp EXCL   &kp AT     &kp HASH   &kp UNDER      &kp SEMI   &none      &none      &none      &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &kp ESC        &trans     &trans
+                                             &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
